@@ -24,7 +24,11 @@ public class PersonalMailPageElements {
     public SelenideElement sendButton;
 
     // метод клика по разделу "Написать письмо"
+<<<<<<< HEAD
     //поставил небольшую задержку, притормаживается отображение страницы при переходе
+=======
+    //поставил ожидание, притормаживается отображение страницы при переходе
+>>>>>>> e993782 (Test task commit)
     public void clickButtonWriteALetter() throws InterruptedException {
         Thread.sleep(10000);
         buttonWriteALetter.click();
@@ -42,14 +46,22 @@ public class PersonalMailPageElements {
     }
 
     //метод ввода текста письма
+<<<<<<< HEAD
     //задержку поставил, для отображения заполнения всех полей письма
+=======
+    //ожидание поставил, для отображения заполнения всех полей письма
+>>>>>>> e993782 (Test task commit)
     public void setLetterTextInputField() throws InterruptedException {
         letterTextInputField.sendKeys("Hello, world! Hello, Java!");
         Thread.sleep(5000);
     }
 
     //метод клика по кнопке "Отправить" письмо
+<<<<<<< HEAD
     //задержка лишь для вывода ожидаемого результата "Письмо отправлено"
+=======
+    //ожидание лишь для вывода с паузой ожидаемого результата "Письмо отправлено"
+>>>>>>> e993782 (Test task commit)
     public void clickSendButton() throws InterruptedException {
         sendButton.click();
         Thread.sleep(5000);
