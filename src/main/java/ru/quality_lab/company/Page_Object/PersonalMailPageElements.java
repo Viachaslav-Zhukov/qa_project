@@ -42,10 +42,8 @@ public class PersonalMailPageElements {
     }
 
     //метод ввода текста письма
-    //ожидание поставил, для проверки заполнения всех полей письма по заданию
-    public void setLetterTextInputField() throws InterruptedException {
+    public void setLetterTextInputField() {
         letterTextInputField.sendKeys("Hello, world! Hello, Java!");
-        Thread.sleep(5000);
     }
 
     //метод клика по кнопке "Отправить" письмо
