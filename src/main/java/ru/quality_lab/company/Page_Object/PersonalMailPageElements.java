@@ -24,7 +24,7 @@ public class PersonalMailPageElements {
     public SelenideElement sendButton;
 
     // метод клика по разделу "Написать письмо"
-    //поставил ожидание, притормаживается отображение страницы при переходе
+    //поставил ожидание, при переходе медленно прорисовывалась страница
     public void clickButtonWriteALetter() throws InterruptedException {
         Thread.sleep(10000);
         buttonWriteALetter.click();
@@ -42,7 +42,7 @@ public class PersonalMailPageElements {
     }
 
     //метод ввода текста письма
-    //ожидание поставил, для отображения заполнения всех полей письма
+    //ожидание поставил, для проверки заполнения всех полей письма по заданию
     public void setLetterTextInputField() throws InterruptedException {
         letterTextInputField.sendKeys("Hello, world! Hello, Java!");
         Thread.sleep(5000);
