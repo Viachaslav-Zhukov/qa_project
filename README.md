@@ -1,2 +1,3 @@
 # qa_project
-Test task
+Test task QA automation engineer
+Компания Лаборатория качества
