@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 
 import static com.codeborne.selenide.Condition.enabled;
 
-     //создали Page Object Model  личной страницы авторизированного пользователя  mail.ru почты
+     //создаём Page Object Model  личной страницы авторизированного пользователя  mail.ru почты
 public class PersonalMailPageElements {
     //сохраняем URL личной страницы авторизированного пользователя почты
     public static final String URL = "https://e.mail.ru/inbox/?afterReload=1/";
