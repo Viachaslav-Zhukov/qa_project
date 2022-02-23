@@ -2,6 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <!--Данные о проекте -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.quality_lab.company</groupId>
     <artifactId>qa_project</artifactId>
@@ -21,7 +22,7 @@
         </plugins>
     </build>
 
-
+    <!--Этот блок нужен для корректной работы с JDK9+-->
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -29,9 +30,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
+    <!--Подключенные зависимости-->
     <dependencies>
 
         <dependency>
+            <!--Добавили библиотеку JUnit-->
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
@@ -39,12 +42,14 @@
         </dependency>
 
         <dependency>
+            <!--Подключили зависимость Selenium-->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.1.2</version>
         </dependency>
 
         <dependency>
+            <!--Подключили зависимость Selenide-->
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>6.3.0</version>
