@@ -8,6 +8,7 @@
     <artifactId>qa_project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--Apache Maven фреймворк для автоматизации сборки проектов -->
     <build>
         <plugins>
             <plugin>
