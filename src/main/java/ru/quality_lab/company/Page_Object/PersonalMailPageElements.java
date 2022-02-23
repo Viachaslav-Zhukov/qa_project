@@ -4,6 +4,8 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import static com.codeborne.selenide.Condition.enabled;
+
 public class PersonalMailPageElements {
     //сохраняем URL личной страницы авторизированного пользователя почты
     public static final String URL = "https://e.mail.ru/inbox/?afterReload=1/";
@@ -24,11 +26,9 @@ public class PersonalMailPageElements {
     public SelenideElement sendButton;
 
     // метод клика по разделу "Написать письмо"
-    //поставил ожидание, при переходе медленно прорисовывалась страница
-    public void clickButtonWriteALetter() throws InterruptedException {
-        Thread.sleep(8000);
-        buttonWriteALetter.click();
-
+    //использую проверку явно - с целью ожидания нужного состояния у элемента перед действием
+    public void clickButtonWriteALetter() {
+        buttonWriteALetter.shouldBe(enabled).click();
     }
 
     //метод ввода адресата получателя письма
@@ -36,6 +36,7 @@ public class PersonalMailPageElements {
         toField.sendKeys("slava.slava.zhukov@yandex.by");
     }
 
+    //чтобы заполнить поля письма, применяю метод Selenium sendKeys()
     //метод ввода темы письма
     public void setTemField() {
         temField.sendKeys("QA_Test_Project");
