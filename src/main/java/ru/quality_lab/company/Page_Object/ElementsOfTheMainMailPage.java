@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-     //создаём Page Object Model главной страницы входа mail.ru почты
+     //создаём Page Object Model главной страницы входа в mail.ru почту
 public class ElementsOfTheMainMailPage {
     //сохраняем URL главной страницы почты
     public static final String URL = "https://account.mail.ru/";
