@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ru.quality_lab.company.CheckingUserAuthorizationWritingALetterTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.522 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.164 sec

@@ -26,7 +26,7 @@ public class ElementsOfTheMainMailPage {
     @FindBy(how = How.XPATH, using = ".//span[text()='Войти']")
     public SelenideElement loginButtonTwo;
 
-     //чтобы заполнить поля ввода, применяю метод Selenide setValue()
+    //чтобы заполнить поля ввода, применяю метод Selenide setValue()
     //метод заполнения поля ввода Имя аккаунта
     public void setUsername(String username) {
         accountEntryField.setValue(username);
