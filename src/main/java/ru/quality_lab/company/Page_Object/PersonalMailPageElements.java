@@ -26,7 +26,7 @@ public class PersonalMailPageElements {
     // метод клика по разделу "Написать письмо"
     //поставил ожидание, при переходе медленно прорисовывалась страница
     public void clickButtonWriteALetter() throws InterruptedException {
-        Thread.sleep(10000);
+        Thread.sleep(8000);
         buttonWriteALetter.click();
 
     }
