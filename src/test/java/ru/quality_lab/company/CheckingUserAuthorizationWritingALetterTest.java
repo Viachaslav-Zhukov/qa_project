@@ -3,7 +3,6 @@ package ru.quality_lab.company;
 import org.junit.Test;
 import ru.quality_lab.company.Page_Object.ElementsOfTheMainMailPage;
 import ru.quality_lab.company.Page_Object.PersonalMailPageElements;
-
 import static com.codeborne.selenide.Selenide.open;
 
 // создать класс запуска теста для авторизации пользователя в своей почте и написать письмо
